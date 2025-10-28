@@ -1,0 +1,27 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  theme: {
+    extend: {
+      colors: {
+        primary: {
+          500: "#0ea5e9",
+          600: "#0284c7"
+        },
+        neutral: {
+          50: "#f9fafb",
+          100: "#f3f4f6",
+          200: "#e5e7eb",
+          700: "#374151",
+          800: "#1f2937"
+        },
+        success: "#10b981",
+        error: "#ef4444"
+      },
+      boxShadow: {
+        modal: "0 4px 20px rgba(0, 0, 0, 0.15)"
+      }
+    }
+  },
+  plugins: []
+};

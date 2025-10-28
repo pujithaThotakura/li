@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* === Global Resets === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  background-color: #f9fafb; /* Light neutral background */
+  color: #1f2937; /* Neutral text */
+  font-family: 'Inter', sans-serif;
+  overflow: hidden;
+}
+
+/* === Scrollbar Styling === */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #cbd5e1; /* Gray thumb */
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #94a3b8;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f5f9;
+}
+
+/* === Task Progress Animations === */
+.task-progress-bar {
+  transition: width 0.3s ease-in-out;
+}
+
+/* === Timeline Background Grid Lines === */
+.timeline-grid-line {
+  background-color: #e5e7eb;
+  opacity: 0.6;
+}
+
+/* === Utility Classes === */
+.text-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
